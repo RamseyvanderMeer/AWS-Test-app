@@ -23,6 +23,6 @@ phases:
       - ng build --prod
 artifacts:
   files:
-    - "**/*"
-  discard-paths: no
-  base-directory: dist/AWS-Test-app
+        - '**/*'
+    base-directory: 'dist*'
+    discard-paths: no
