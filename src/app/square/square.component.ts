@@ -13,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
 export class SquareComponent {
   rando: any;
   constructor(){
-    setInterval(() => this.rando = Math.round(Math.random()*1000),200)
+    setInterval(() => this.rando = Math.round(Math.random()*10),200)
   }
 
 }
