@@ -1,19 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-square',
   template: `
-    <p>
-      {{rando}}
-    </p>
+    <div >
+      <p>{{ value }}</p>
+    </div>
   `,
   styles: [
-  ]
+    'p { text-align: center; font-size: 5em; }',
+    'div { width: 100%; height:100%; display:flex; justify-content: center; align-items: center; }',
+  ],
 })
 export class SquareComponent {
-  rando: any;
-  constructor(){
-    setInterval(() => this.rando = Math.round(Math.random()*10),200)
-  }
-
+  @Input() value!: 'X' | 'O';
 }
