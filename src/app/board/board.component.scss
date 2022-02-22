@@ -1,12 +1,33 @@
 main{
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 30vw 30vw 30vw;
     grid-gap: 0px;
 }
 app-square{
     border: 1px black solid;
-    height: 200px;
+    height: 30vw;
 }
+
 button{
-    margin: 2em 0;
+    margin: 2em 1em;
+}
+.container{
+    width: 100%;
+    // border: red 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.linkto{
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+h1{
+    font-size: 5em;
 }

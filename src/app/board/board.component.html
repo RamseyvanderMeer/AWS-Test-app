@@ -1,11 +1,14 @@
-<div>
+<div class="container">
+  <h1>Tic Tac Toe Game</h1>
+  <div>
+  <a target="blank" class="linkto" href="http://ramseyvdm.com"><button nbButton hero status="warning">my website</button></a>
     <button nbButton hero status="primary" (click)="newGame()">
       start new game
     </button>
-    <h1>Rachel Is A Butt</h1>
-  <h1 *ngIf="!winner">Current Player: {{ player }}</h1>
+  </div>
+  <h2 *ngIf="!winner">Current Player: {{ player }}</h2>
 
-  <h1 *ngIf="winner">Player {{ winner }} won Tic Tac Toe!</h1>
+  <h2 *ngIf="winner">Player {{ winner }} won Tic Tac Toe!</h2>
 
 </div>
 
