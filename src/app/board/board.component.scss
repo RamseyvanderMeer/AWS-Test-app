@@ -1,15 +1,20 @@
 main{
+    width: 75vw;
+    max-width: 750px;
+    height: 75vw;
+    max-height:750px;
     display: grid;
-    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 0px;
 }
 app-square{
     border: 1px black solid;
-    height: 30vw;
 }
 
-button{
+.button{
     margin: 2em 1em;
+    border: red solid 1px;
 }
 .container{
     width: 100%;
@@ -30,4 +35,14 @@ button{
 
 h1{
     font-size: 5em;
+    line-height: .8em;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: -2em 0;
 }
