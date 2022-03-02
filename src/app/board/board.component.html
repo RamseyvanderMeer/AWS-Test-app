@@ -1,7 +1,10 @@
 <div class="container">
   <h1>Tic Tac Toe Game</h1>
+  <h3>branch testing</h3>
   <div class="buttons">
-  <a target="blank" class="linkto" href="http://ramseyvdm.com"><button nbButton hero status="warning">my website</button></a>
+    <a target="blank" class="linkto" href="http://ramseyvdm.com"
+      ><button nbButton hero status="warning">my website</button></a
+    >
     <button class="button" nbButton hero status="primary" (click)="newGame()">
       start new game
     </button>
@@ -10,14 +13,12 @@
 
   <h2 *ngIf="winner">Player {{ winner }} won Tic Tac Toe!</h2>
 
-  
   <main>
-  <app-square
-  *ngFor="let val of squares; let i = index"
-  [value]="val"
-  (click)="makeMove(i)"
-  >
-</app-square>
-</main>
-
+    <app-square
+      *ngFor="let val of squares; let i = index"
+      [value]="val"
+      (click)="makeMove(i)"
+    >
+    </app-square>
+  </main>
 </div>
